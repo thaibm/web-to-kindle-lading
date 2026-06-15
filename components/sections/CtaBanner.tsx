@@ -1,4 +1,5 @@
 import Button from "@/components/ui/Button";
+import { ChromeIcon } from "@/components/icons";
 
 const CWS_URL =
   "https://chromewebstore.google.com/detail/send-web-to-kindle/egoihiminiafbalfnlekfhhmccihbgpe";
@@ -15,24 +16,8 @@ export default function CtaBanner() {
           server, no tracking.
         </p>
         <div className="flex justify-center">
-          <Button
-            href={CWS_URL}
-            size="lg"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              aria-hidden="true"
-            >
-              <circle cx="10" cy="10" r="8" stroke="currentColor" strokeWidth="1.6" />
-              <circle cx="10" cy="10" r="3.5" stroke="currentColor" strokeWidth="1.6" />
-              <path d="M10 2a8 8 0 010 16" stroke="currentColor" strokeWidth="1.6" opacity="0" />
-              <path d="M2 10h5M13 10h5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-            </svg>
+          <Button href={CWS_URL} size="lg" target="_blank" rel="noopener noreferrer">
+            <ChromeIcon />
             Add to Chrome — Free
           </Button>
         </div>
