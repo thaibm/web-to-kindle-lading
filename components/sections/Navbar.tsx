@@ -8,7 +8,7 @@ const CWS_URL =
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-cream/90 backdrop-blur-sm border-b border-border">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <div className="max-w-5xl mx-auto h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Image
             src="/logo.png"
@@ -19,11 +19,15 @@ export default function Navbar() {
             priority
           />
           <span className="font-[var(--font-lora)] font-semibold text-ink text-lg leading-tight">
-            Send Web to{" "}
-            <span className="text-amber">Kindle</span>
+            Send Web to <span className="text-amber">Kindle</span>
           </span>
         </div>
-        <Button href={CWS_URL} size="sm" target="_blank" rel="noopener noreferrer">
+        <Button
+          href={CWS_URL}
+          size="sm"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Add to Chrome
         </Button>
       </div>
